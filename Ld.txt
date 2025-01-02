@@ -1,0 +1,103 @@
+//The three step process
+step1: rough sketch on a paper
+step2: planned sketch on figma
+step3: website creating
+1. It is recommended to make a mobile phone layout first then slowly move towards tablet then laptop
+2. When thinking of html think in rectangle (vip)
+3. First go with all the content that means complete html then start designing that means css
+--------------------------------------------------------------
+//To link HTML and CSS file
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+//create 3 tags <header> <footer> <main> <nav> and <div> if neccessary in <body>
+<body>
+    <div>
+        <header>
+            <nav>
+            </nav>
+        </header>
+        <main>
+        </main>
+        <div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+//faster way to type <div> with class 
+.header-left
+
+//to show a picture in html that is actually clickable
+<a href="">
+    <img src="logo.svg" alt="Frisky logo">
+</a>
+
+//When you don't want the href link to take you to anywhere
+<a href="#">Home</a>
+
+//you can use multiple class in the same class attribute
+<a href="#" class="home hide-mobile">Home</a>
+NOTE: In here the hide-mobile is being used so that when we use css and use this class it will be easier to implement.This will be hidden for mobile
+
+//making a navigation bar using <nav> tag
+<header>
+    <nav>
+        <a href="#" class="menu-open hide-desktop">
+            <img src="menu.svg" alt="Open menu">
+        </a>
+        <ul>
+            <li class="hide-desktop">
+                <a href="#" class="menu-close">
+                    <img src="close.svg" alt="Close menu">
+                </a>
+            </li>
+            <li><a href="#">Our Food</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Studies</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+NOTE: This will create a navigation bar vertically along with picture 
+
+//creating action button (cta) typically present in hero section or <main> tag => a clickable button which performs some action when its clicked, thing that you want the customer to do the most.
+<main>
+    <h1>Your cat will go <img src="bonkers.svg" alt="Text that says bonkers"></h1>
+    <p class="subhead">..for the world's best testing cat food, sourced with only the finest ingredients. Made with love from the heart of Mississippi.</p>
+    <a href="#" class="primary-cta">Get Bonkers</a>
+</main>
+NOTE: You can use nested tags
+HTML will ignore any enter button you pressed inside the <p>
+
+//faster way to create the class subhead in <p>
+p.subhead
+
+//Making the circle inside circle inside cat
+<div class="cat-container">
+    <div class="cat">
+        <img src="cat.png" alt="Cat illustration">
+        <div class="inner-circle"></div>
+        <div class="outer-circle"></div>
+    </div>
+</div>
+
+//starting with CSS
+selector =>body(or other tags)
+{} => rule set
+
+1. For applying property on single tags
+body {
+
+}
+
+2. for applying property on multiple tags
+nav, ul {
+
+}
+
+3. For applying property on one tag inside another
+//first thing to do in css
